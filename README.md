@@ -1,6 +1,7 @@
 # Terminator
 
 * Reproducing Spyboy technique to terminate all EDR/XDR/AVs processes
+* Spyboy sells the software for prices ranging from $300 for a single bypass to $3,000 for an all-in-one bypass [for more detail](https://www.bleepingcomputer.com/news/security/terminator-antivirus-killer-is-a-vulnerable-windows-driver-in-disguise/)
 * the sample is sourced from [loldrivers](https://www.loldrivers.io/drivers/49920621-75d5-40fc-98b0-44f8fa486dcc/)
 # usage
 

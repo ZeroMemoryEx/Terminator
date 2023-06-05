@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://www.buymeacoffee.com/ZeroMemoryEx" target="_blank">
+    <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee">
+  </a>
+</p>
+
 # Terminator
 
 * Reproducing Spyboy technique to terminate all EDR/XDR/AVs processes
@@ -10,3 +16,9 @@
 * keep the program running to prevent the service from restarting the anti-malwares
 
   ![image](https://github.com/ZeroMemoryEx/Terminator/assets/60795188/81160d04-95e2-48e8-9f2f-177a2757762e)
+  
+# technical details
+
+* The driver contains some protectiion mechanism that only allow trusted Process IDs to send IOCTLs, Without adding your process ID to the trusted list, you will receive an 'Access Denied' message every time. However, this can be easily bypassed by sending an IOCTL with our PID to be added to the trusted list, which will then permit us to control numerous critical IOCTLs
+
+  ![image](https://github.com/ZeroMemoryEx/Terminator/assets/60795188/e26238c8-fcf8-40ec-9ed8-8e8de9436093)

@@ -8,4 +8,4 @@
 * run the program as an administrator
 * keep the program running to prevent the service from restarting the anti-malwares
 
-![image](https://github.com/ZeroMemoryEx/Terminator/assets/60795188/6cc3b92d-2422-4805-a413-d9cfd298db68)
+  ![image](https://github.com/ZeroMemoryEx/Terminator/assets/60795188/6cc3b92d-2422-4805-a413-d9cfd298db68)

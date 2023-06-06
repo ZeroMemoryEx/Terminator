@@ -6,7 +6,7 @@
 
 # Terminator
 
-* Reproducing Spyboy's technique, which involves terminating all EDR/XDR/AV processes by abusing the zam64.sys driver
+* Reproducing Spyboy technique, which involves terminating all EDR/XDR/AVs processes by abusing the zam64.sys driver
 * Spyboy was selling the Terminator software at a price of $3,000 [for more detail](https://www.bleepingcomputer.com/news/security/terminator-antivirus-killer-is-a-vulnerable-windows-driver-in-disguise/)
 * the sample is sourced from [loldrivers](https://www.loldrivers.io/drivers/49920621-75d5-40fc-98b0-44f8fa486dcc/)
 # usage

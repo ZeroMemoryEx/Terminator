@@ -11,6 +11,7 @@
 * the sample is sourced from [loldrivers](https://www.loldrivers.io/drivers/49920621-75d5-40fc-98b0-44f8fa486dcc/)
 # usage
 
+* the compiled version can be found [here](https://github.com/ZeroMemoryEx/Terminator/releases)
 * Place the driver `Terminator.sys` in the same path as the executable
 * run the program as an administrator
 * keep the program running to prevent the service from restarting the anti-malwares

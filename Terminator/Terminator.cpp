@@ -42,7 +42,7 @@ const char* const g_edrlist[] = {
 	"tda.exe",       "tdawork",         "tpython",
 	"vectra",        "wincollect",      "windowssensor",
 	"wireshark",     "threat",          "xagt.exe",
-	"xagtnotif.exe" };
+	"xagtnotif.exe" ,"mssense" };
 
 int g_edrlistSize = sizeof(g_edrlist) / sizeof(g_edrlist[0]);
 

@@ -211,6 +211,7 @@ int main(void) {
 		NULL, 0, NULL, NULL)) {
 		printf("Failed to register the process in the trusted list %X !!\n",
 			IOCTL_REGISTER_PROCESS);
+		CloseHandle(hDevice);
 		return (-1);
 	}
 
